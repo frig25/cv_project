@@ -1,0 +1,66 @@
+NOTE
+- MAVIC
+	- Spettri
+		- Verde (G): 560 ± 16 nm;
+		- Rosso (R): 650 ± 16 nm;
+		- Red Edge (RE): 730 ± 16 nm;
+		- Vicino-infrarosso (NIR): 860 nm ± 26 nm
+	ANALISI AD OCCHIO NUDO - RICONOSCIBILITA' DEI MATERIALI
+	- Oggetti in metallo
+		- Forse presente un piccone di metallo vicini alle persone
+			- Intensità bassa in tutti gli spettri
+		- Ha maggiore riconoscibilità in NIR e RE e minore in G e R
+	- Oggetti in plastica
+		- Facilmente: G, R
+		- Mediamente: RE
+		- Difficilmente: NIR
+	- Flora (erba e foglie)
+		- Occupa gran parte dell'immagine
+		- Alta intensità in NIR e RE e minore in G e R
+			- Crea un buon contrasto tra flora e oggetti metallici in NIR e RE
+	- Pietre e ghiaia
+		- Facilmente: G, R
+		- Mediamente: RE
+		- Difficilmente: NIR
+	
+
+- MICASENSE
+	- Spettri
+		- Coastal blue 444(28)
+		- blue 475(32)
+		- green 531(14)
+		- green 560(27)
+		- red 650(16)
+		- red 668(14)
+		- red edge 705(10)
+		- red edge 717(12)
+		- red edge 740(18)
+		- NIR 842(57)
+	
+	ANALISI AD OCCHIO NUDO - RICONOSCIBILITA' DEI MATERIALI
+	- Oggetti in metallo
+		- Intensità molto bassa in tutti gli spettri
+		- Molto riconoscibili in 4, 5, 9, 10
+	- Oggetti in plastica
+		- Intensità medio-alta in tutti gli spettri
+
+	ANALISI CON CV2
+	- Thresholding delle immagini
+		- Metallo si riconosce in 4, 5, 9, 10
+
+
+DOMANDE
+- Non si conosce ground truth delle foto mavic. Sono presenti oggetti in metallo in foto?
+- Non è presente l'associazione immagine-spettro di micasense.
+- Sul sito micasense viene citato un software per allineare le immagini. Si hanno informazioni?
+
+IDEE
+- Object detection
+	- con CNN (ResNet, VGG o DenseNet)
+	- con Region-based CNN (Fast R-CNN, Faster R-CNN, o Mask R-CNN)
+	- con YOLO
+	- con Transformers (DETR)
+- Semantic segmentation (U-Net, SegNet o DeepLab)
+- Fine tuning? Serve dataset con ground truth!
+	- MCubeS dataset (RGB e NIR): https://datasetninja.com/multimodal-material-segmentation
+

@@ -1,0 +1,23 @@
+MICASENSE - FEDORA INSTRUCTIONS
+# INSTALLATION
+sudo dnf install git-lfs
+sudo dnf install zbar
+sudo dnf install make
+sudo dnf install perl-Image-ExifTool
+sudo dnf install conda
+git clone https://github.com/micasense/imageprocessing.git
+cd imageprocessing
+conda env create -f micasense_conda_env.yml
+
+# TESTING
+cd imageprocessing
+conda activate micasense
+pytest .
+
+# USE THE NOTEBOOK
+cd imageprocessing
+conda activate micasense
+jupyter notebook .
+
+# CLOSE ENVIROMENT
+conda deactivate

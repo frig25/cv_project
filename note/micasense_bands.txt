@@ -1,0 +1,37 @@
+band_names ['Blue', 'Green', 'Red', 'NIR', 'Red Edge', 'Blue-444', 'Green-531', 'Red-650', 'Red edge-705', 'Red edge-740']
+
+Sorted band_names ['Blue-444', 'Blue', 'Green-531', 'Green', 'Red-650', 'Red', 'Red edge-705', 'Red Edge', 'Red edge-740', 'NIR']
+
+Original [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Sorted [5, 0, 6, 1, 7, 2, 8, 4, 9, 3]
+	
+
+center_wavelengths [475, 560, 668, 842, 717, 444, 531, 650, 705, 740]
+center_wavelengths_sorted [444, 475, 531, 560, 650, 668, 705, 717, 740, 842]
+
+
+Original Band-number
+Blue: 1
+Green: 2
+Red: 3
+NIR: 4
+Red Edge: 5
+Blue-444: 6
+Green-531: 7
+Red-650: 8
+Red edge-705: 9
+Red edge-740: 10
+
+Sorted Band-Number
+Blue-444: 1
+Blue: 2
+Green-531: 3
+Green: 4
+Red-650: 5
+Red: 6
+Red edge-705: 7
+Red Edge: 8
+Red edge-740: 9
+NIR: 10
+
+
