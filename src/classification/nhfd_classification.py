@@ -47,7 +47,7 @@ def main():
         "Red edge-740" : 9
     }
 
-    alpha = 0.50  # Threshold factor in [0,1] — controls model sensitivity
+    alpha = 0.575  # Threshold factor in [0,1] — controls model sensitivity
     color_map = cv2.COLORMAP_JET  # Color map used to visualize the NHFD index
 
     # ----- Input paths -----

@@ -135,7 +135,7 @@ def save_metrics_as_html(metrics_df, macro_df, micro_df, alpha, output_path):
 
 
 def main():
-    alpha = 0.50  # Threshold factor used during classification
+    alpha = 0.575  # Threshold factor used during classification
 
     # ----- Input paths -----
     gt_path = '../../data/udine/preprocessing/gt_mask'
